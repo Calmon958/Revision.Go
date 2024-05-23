@@ -1,43 +1,29 @@
 package main
 
 import (
-	"fmt"
-	"os"
+"os"
+"github.com/01-edu/z01"
 )
 
-func main() {
-
-	args := os.Args[1]
-
-	str := ""
-	for i := len(args) - 1; i >= 0; i-- {
-		if args[i] != ' ' {
-			str = string(args[i]) + str
-		} else {
-			if str != "" {
-				break
-			}
-
-		}
-	}
-	fmt.Println(str)
-
+func main () {
+if len(os.Args) != 2 {
+return
 }
+arg := os.Args[1]
 
-// s := ''
+s:= ""
 
-// s := ''
-// for _,char := range args {
-// 	for i := len(args) -1; i >= 0; i-- {
-// 		if char[i] == ' '
-// 	}
-
-// }
-// }
-// for _,char := range args {
-// 	for i := len(args) -1; i >= 0; i-- {
-// 		if char[i] == ' '
-// 	}
-
-// }
-// }
+for i:= len(arg)-1; i>=0; i-- {
+if  arg[i] != ' ' {
+s = string(arg[i]) + s
+} else {
+if s !="" {
+break
+}
+}
+}
+for _,char := range s {
+z01.PrintRune(char)
+}
+z01.PrintRune('\n')
+}
