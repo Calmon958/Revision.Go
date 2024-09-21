@@ -14,17 +14,16 @@ func main() {
 		// fmt.Println(nb)
 	}
 
-	for nb > 0 {
-		var m int
-		m = nb % 10
-		nb /= 10
-		name = append(name, rune(m+'0'))
-		// fmt.Println(name)
+	// for nb > 0 {
+	// 	// var m int
+	// 	m := nb % 10
+	// 	nb /= 10
+	// 	name = append(name, rune(m+'0'))
+	// 	fmt.Println(string(name))
 
-	}
+	// }
 
 	for i := len(name) - 1; i >= 0; i-- {
 		z01.PrintRune(name[i])
 	}
-
 }

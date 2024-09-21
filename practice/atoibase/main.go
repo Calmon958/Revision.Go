@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func AtoiBase(s, base string) int {
 	if !isValidBase(base) {
 		return 0
@@ -41,10 +37,10 @@ func isValidBase(base string) bool {
 	return true
 }
 
-func main() {
-	fmt.Println(AtoiBase("125", "0123456789"))
-	fmt.Println(AtoiBase("1111101", "01"))
-	fmt.Println(AtoiBase("7D", "0123456789ABCDEF"))
-	fmt.Println(AtoiBase("uoi", "choumi"))
-	fmt.Println(AtoiBase("bbbbbab", "-ab"))
-}
+// func main() {
+// 	fmt.Println(AtoiBase("125", "0123456789"))
+// 	fmt.Println(AtoiBase("1111101", "01"))
+// 	fmt.Println(AtoiBase("7D", "0123456789ABCDEF"))
+// 	fmt.Println(AtoiBase("uoi", "choumi"))
+// 	fmt.Println(AtoiBase("bbbbbab", "-ab"))
+// }

@@ -10,14 +10,14 @@ func FifthAndSkip(str string) string {
 		return "\n"
 	}
 
-	for i := 0; i < len(str); i++ {
-		if str[i] != ' ' {
-			if (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') {
+	for _, ch := range str {
+		if ch != ' ' {
+			if (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') {
 				count++
 				if count%6 == 0 {
 					word += string(' ')
 				} else {
-					word += string(str[i])
+					word += string(ch)
 				}
 			} else {
 				return "Invalid Input"

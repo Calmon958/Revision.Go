@@ -35,6 +35,9 @@ hexDigit := "0123456789ABCDEF"
 return string(hexDigit[b>>4]) + string(hexDigit[b&0x0f])
 }
 
+
+
+
 func main() {
 	PrintMemory([10]byte{'h', 'e', 'l', 'l', 'o', 16, 21, '*'})
 }

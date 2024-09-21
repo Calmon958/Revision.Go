@@ -43,7 +43,6 @@ func Prime(nb int) bool {
 func primeFactor(num int) string {
 	result := ""
 	for i := 2; i < num; i++ {
-		fmt.Println(i)
 		for Prime(i) {
 			if num%i == 0 {
 				result = itoa(i)
